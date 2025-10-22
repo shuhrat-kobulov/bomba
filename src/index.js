@@ -4,7 +4,7 @@ const Application = require('./application');
  * Create an application instance
  */
 function createApp() {
-  return new Application();
+    return new Application();
 }
 
 module.exports = createApp;
