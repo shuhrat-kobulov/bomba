@@ -1,21 +1,35 @@
 {
   "name": "my-framework",
   "version": "0.1.0",
-  "description": "A lightweight Express-like framework for Node.js",
+  "description": "A lightweight Express-like framework for Node.js built from scratch",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "example": "node examples/basic-server.js"
+    "start": "node examples/basic-server.js",
+    "example": "node examples/basic-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "framework",
     "http",
     "web",
-    "server"
+    "server",
+    "express",
+    "lightweight",
+    "nodejs",
+    "middleware",
+    "routing"
   ],
   "author": "",
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuhrat-kobulov/bomba.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shuhrat-kobulov/bomba/issues"
+  },
+  "homepage": "https://github.com/shuhrat-kobulov/bomba#readme"
 }

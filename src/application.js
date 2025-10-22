@@ -19,7 +19,7 @@ class Application {
       path = '/';
     }
 
-    handlers.forEach(handler => {
+    handlers.forEach((handler) => {
       this.middleware.push({ path, handler });
     });
 
@@ -65,7 +65,7 @@ class Application {
   /**
    * Get application settings
    */
-  get(key) {
+  getSetting(key) {
     return this.settings[key];
   }
 
@@ -88,7 +88,7 @@ class Application {
       // First, execute global middleware
       if (index < this.middleware.length) {
         const { path, handler } = this.middleware[index++];
-        
+
         // Check if middleware path matches
         if (req.url.startsWith(path)) {
           try {
@@ -102,10 +102,10 @@ class Application {
       } else {
         // Then, try to match a route
         const route = this.router.match(req.method, req.url);
-        
+
         if (route) {
           req.params = route.params;
-          
+
           // Execute route handlers
           let handlerIndex = 0;
           const routeNext = async (err) => {
@@ -138,13 +138,13 @@ class Application {
    */
   handleError(err, req, res) {
     console.error('Error:', err);
-    
+
     if (!res.headersSent) {
       res.status(err.status || 500).json({
         error: {
           message: err.message || 'Internal Server Error',
-          status: err.status || 500
-        }
+          status: err.status || 500,
+        },
       });
     }
   }

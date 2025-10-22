@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 app.get('/users/:id', (req, res) => {
   res.json({
     message: 'User details',
-    userId: req.params.id
+    userId: req.params.id,
   });
 });
 
@@ -25,7 +25,7 @@ app.get('/users/:id', (req, res) => {
 app.post('/users', (req, res) => {
   res.status(201).json({
     message: 'User created',
-    data: { id: 123 }
+    data: { id: 123 },
   });
 });
 
@@ -33,7 +33,7 @@ app.post('/users', (req, res) => {
 app.get('/search', (req, res) => {
   res.json({
     query: req.query.q,
-    page: req.query.page || 1
+    page: req.query.page || 1,
   });
 });
 
@@ -64,6 +64,8 @@ app.listen(PORT, () => {
   console.log(`  GET  http://localhost:${PORT}/`);
   console.log(`  GET  http://localhost:${PORT}/users/42`);
   console.log(`  GET  http://localhost:${PORT}/search?q=test&page=2`);
-  console.log(`  GET  http://localhost:${PORT}/protected (with Authorization: secret-token)`);
+  console.log(
+    `  GET  http://localhost:${PORT}/protected (with Authorization: secret-token)`
+  );
   console.log(`  POST http://localhost:${PORT}/users`);
 });
