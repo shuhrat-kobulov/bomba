@@ -1,7 +1,7 @@
 {
   "name": "my-framework",
   "version": "0.1.0",
-  "description": "A lightweight Express-like framework for Node.js built from scratch",
+  "description": "A lightweight Express-like framework for Node.js built from scratch for learning purposes",
   "main": "src/index.js",
   "scripts": {
     "start": "node examples/basic-server.js",
@@ -17,7 +17,11 @@
     "lightweight",
     "nodejs",
     "middleware",
-    "routing"
+    "routing",
+    "learning",
+    "educational",
+    "tutorial",
+    "beginner"
   ],
   "author": "",
   "license": "MIT",

@@ -1,6 +1,28 @@
-# My Framework
+# Bomba Framework ⚡
 
-A lightweight Express-like framework for Node.js built from scratch.
+> A lightweight, Express-like web framework for Node.js built from scratch **for learning purposes**
+
+Bomba is a minimalist web framework created specifically to help developers understand how web frameworks work under the hood. Inspired by Express.js, it provides the essential building blocks for creating web applications and APIs while being simple enough to read, understand, and extend.
+
+## 🎓 Educational Purpose
+
+This framework was built as a **learning project** to demonstrate:
+- How HTTP servers work in Node.js
+- Middleware pattern implementation
+- URL routing and pattern matching
+- Request/Response enhancement
+- Asynchronous request handling
+- Error handling in web applications
+
+**Perfect for:** Students, bootcamp participants, and developers who want to understand how Express.js and similar frameworks work internally.
+
+## 🚀 Why Bomba?
+
+- **📚 Educational**: Built specifically for learning and understanding web frameworks
+- **🔧 Simple**: Clean, readable code that's easy to follow and extend
+- **🪶 Lightweight**: Minimal dependencies, focusing on core concepts
+- **🎯 Familiar**: Express-like API for easy learning transition
+- **🧠 Insightful**: Heavily commented code explaining the "why" behind each decision
 
 ## Features
 
@@ -119,6 +141,50 @@ Potential features to add:
 - Compression
 - Security headers
 
-## License
+## 🤝 Contributing
 
-MIT
+Contributions are welcome! Here's how you can help:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## 📋 Roadmap
+
+- [ ] Body parsing (JSON, URL-encoded, multipart)
+- [ ] Cookie parsing and session management
+- [ ] Static file serving
+- [ ] Template engine support
+- [ ] Router mounting and sub-applications
+- [ ] CORS middleware
+- [ ] Security headers
+- [ ] Compression middleware
+- [ ] Rate limiting
+- [ ] WebSocket support
+
+## 🐛 Issues
+
+Found a bug or have a feature request? Please open an issue on [GitHub Issues](https://github.com/shuhrat-kobulov/bomba/issues).
+
+## ⭐ Show Your Support
+
+If you like this project, please consider giving it a star on GitHub!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Shuhrat Kobulov**
+- GitHub: [@shuhrat-kobulov](https://github.com/shuhrat-kobulov)
+
+---
+
+<div align="center">
+  <strong>Built with ❤️ for learning and the Node.js community</strong>
+  <br>
+  <em>⭐ If this helped you understand web frameworks better, please star the repo!</em>
+</div>
