@@ -7,32 +7,33 @@ Bomba is a minimalist web framework created specifically to help developers unde
 ## 🎓 Educational Purpose
 
 This framework was built as a **learning project** to demonstrate:
-- How HTTP servers work in Node.js
-- Middleware pattern implementation
-- URL routing and pattern matching
-- Request/Response enhancement
-- Asynchronous request handling
-- Error handling in web applications
+
+-   How HTTP servers work in Node.js
+-   Middleware pattern implementation
+-   URL routing and pattern matching
+-   Request/Response enhancement
+-   Asynchronous request handling
+-   Error handling in web applications
 
 **Perfect for:** Students, bootcamp participants, and developers who want to understand how Express.js and similar frameworks work internally.
 
 ## 🚀 Why Bomba?
 
-- **📚 Educational**: Built specifically for learning and understanding web frameworks
-- **🔧 Simple**: Clean, readable code that's easy to follow and extend
-- **🪶 Lightweight**: Minimal dependencies, focusing on core concepts
-- **🎯 Familiar**: Express-like API for easy learning transition
-- **🧠 Insightful**: Heavily commented code explaining the "why" behind each decision
+-   **📚 Educational**: Built specifically for learning and understanding web frameworks
+-   **🔧 Simple**: Clean, readable code that's easy to follow and extend
+-   **🪶 Lightweight**: Minimal dependencies, focusing on core concepts
+-   **🎯 Familiar**: Express-like API for easy learning transition
+-   **🧠 Insightful**: Heavily commented code explaining the "why" behind each decision
 
 ## Features
 
-- ✅ HTTP method routing (GET, POST, PUT, DELETE, PATCH)
-- ✅ Middleware support
-- ✅ Route parameters (`:id`, `:name`)
-- ✅ Query string parsing
-- ✅ Enhanced request/response objects
-- ✅ Error handling
-- ✅ Chainable API
+-   ✅ HTTP method routing (GET, POST, PUT, DELETE, PATCH)
+-   ✅ Middleware support
+-   ✅ Route parameters (`:id`, `:name`)
+-   ✅ Query string parsing
+-   ✅ Enhanced request/response objects
+-   ✅ Error handling
+-   ✅ Chainable API
 
 ## Installation
 
@@ -49,22 +50,22 @@ const app = createApp();
 
 // Middleware
 app.use((req, res, next) => {
-  console.log(`${req.method} ${req.url}`);
-  next();
+    console.log(`${req.method} ${req.url}`);
+    next();
 });
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+    res.send('Hello World!');
 });
 
 app.get('/users/:id', (req, res) => {
-  res.json({ userId: req.params.id });
+    res.json({ userId: req.params.id });
 });
 
 // Start server
 app.listen(3000, () => {
-  console.log('Server running on port 3000');
+    console.log('Server running on port 3000');
 });
 ```
 
@@ -73,37 +74,43 @@ app.listen(3000, () => {
 ### Application Methods
 
 #### `app.use([path], handler)`
+
 Register middleware that runs for all requests.
 
 #### `app.get(path, ...handlers)`
+
 Register a GET route.
 
 #### `app.post(path, ...handlers)`
+
 Register a POST route.
 
 #### `app.put(path, ...handlers)`
+
 Register a PUT route.
 
 #### `app.delete(path, ...handlers)`
+
 Register a DELETE route.
 
 #### `app.listen(port, callback)`
+
 Start the server on specified port.
 
 ### Request Object
 
-- `req.params` - Route parameters
-- `req.query` - Query string parameters
-- `req.get(headerName)` - Get header value
-- `req.accepts(type)` - Check accepted content type
+-   `req.params` - Route parameters
+-   `req.query` - Query string parameters
+-   `req.get(headerName)` - Get header value
+-   `req.accepts(type)` - Check accepted content type
 
 ### Response Object
 
-- `res.status(code)` - Set status code
-- `res.json(data)` - Send JSON response
-- `res.send(data)` - Send response
-- `res.set(field, value)` - Set header
-- `res.redirect([status], url)` - Redirect to URL
+-   `res.status(code)` - Set status code
+-   `res.json(data)` - Send JSON response
+-   `res.send(data)` - Send response
+-   `res.set(field, value)` - Set header
+-   `res.redirect([status], url)` - Redirect to URL
 
 ## Running the Example
 
@@ -131,15 +138,14 @@ framework/
 ## Next Steps
 
 Potential features to add:
-- Body parsing (JSON, URL-encoded, multipart)
-- Cookie parsing
-- Static file serving
-- Template engine support
-- Better error handling
-- Router mounting
-- CORS support
-- Compression
-- Security headers
+
+-   Cookie parsing
+-   Template engine support
+-   Better error handling
+-   Router mounting
+-   CORS support
+-   Compression
+-   Security headers
 
 ## 🤝 Contributing
 
@@ -153,16 +159,16 @@ Contributions are welcome! Here's how you can help:
 
 ## 📋 Roadmap
 
-- [ ] Body parsing (JSON, URL-encoded, multipart)
-- [ ] Cookie parsing and session management
-- [ ] Static file serving
-- [ ] Template engine support
-- [ ] Router mounting and sub-applications
-- [ ] CORS middleware
-- [ ] Security headers
-- [ ] Compression middleware
-- [ ] Rate limiting
-- [ ] WebSocket support
+-   [✅] Body parsing (JSON, URL-encoded, multipart)
+-   [ ] Cookie parsing and session management
+-   [✅] Static file serving
+-   [ ] Template engine support
+-   [ ] Router mounting and sub-applications
+-   [ ] CORS middleware
+-   [ ] Security headers
+-   [ ] Compression middleware
+-   [ ] Rate limiting
+-   [ ] WebSocket support
 
 ## 🐛 Issues
 
@@ -179,7 +185,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Shuhrat Kobulov**
-- GitHub: [@shuhrat-kobulov](https://github.com/shuhrat-kobulov)
+
+-   GitHub: [@shuhrat-kobulov](https://github.com/shuhrat-kobulov)
 
 ---
 
