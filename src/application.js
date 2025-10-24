@@ -79,6 +79,15 @@ class Application {
     }
 
     /**
+     * Serve static files from a directory
+     */
+    static(path, options = {}) {
+        const serveStatic = require('./static');
+        this.use(serveStatic(path, options));
+        return this;
+    }
+
+    /**
      * Handle incoming requests
      */
     async handleRequest(req, res) {

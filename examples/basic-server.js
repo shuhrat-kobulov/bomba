@@ -11,9 +11,16 @@ app.use((req, res, next) => {
 // Enable body parsing
 app.enableBodyParsing();
 
-// Route with no parameters
-app.get('/', (req, res) => {
-    res.send('<h1>Welcome to My Framework!</h1>');
+// Serve static files from examples/public directory
+app.static('./examples/public');
+
+// API endpoint for the demo page
+app.get('/test', (req, res) => {
+    res.json({
+        message: 'Hello from Bomba API!',
+        timestamp: new Date().toISOString(),
+        framework: 'Bomba v0.1.0',
+    });
 });
 
 // Route with parameters
